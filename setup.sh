@@ -278,6 +278,7 @@ install_dependencies() {
 }
 
 activate_poetry_env() {
+    poetry env use python3.11
     source "$(poetry env info --path)/bin/activate"
 }
 
